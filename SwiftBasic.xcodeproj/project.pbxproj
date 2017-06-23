@@ -10,6 +10,13 @@
 		866E3A731EFCC913003913F7 /* SwiftBasic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E3A691EFCC913003913F7 /* SwiftBasic.framework */; };
 		866E3A781EFCC913003913F7 /* SwiftBasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E3A771EFCC913003913F7 /* SwiftBasicTests.swift */; };
 		866E3A7A1EFCC913003913F7 /* SwiftBasic.h in Headers */ = {isa = PBXBuildFile; fileRef = 866E3A6C1EFCC913003913F7 /* SwiftBasic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		866E3A871EFCC9D2003913F7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E3A851EFCC9D2003913F7 /* Nimble.framework */; };
+		866E3A881EFCC9D2003913F7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866E3A861EFCC9D2003913F7 /* Quick.framework */; };
+		90ADE0CBA577507359190B0B /* PetrolEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADEF988361283659735D85 /* PetrolEngine.swift */; };
+		90ADE664C20494E1D0625A51 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADEADDD51768FB15A1CE72 /* Engine.swift */; };
+		90ADE800CC791243409D0080 /* PetrolEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADEFEDC6C32C4501C37B0D /* PetrolEngineSpec.swift */; };
+		90ADEA5C6D3DFAAFCB8B2E5A /* DieselEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADEBF4F1EA805FAFE26163 /* DieselEngine.swift */; };
+		90ADEF837710638F17DB1056 /* DieselEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ADEC9069DC2A780578268E /* DieselEngineSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		866E3A721EFCC913003913F7 /* SwiftBasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBasicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		866E3A771EFCC913003913F7 /* SwiftBasicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBasicTests.swift; sourceTree = "<group>"; };
 		866E3A791EFCC913003913F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		866E3A851EFCC9D2003913F7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		866E3A861EFCC9D2003913F7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		90ADEADDD51768FB15A1CE72 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		90ADEBF4F1EA805FAFE26163 /* DieselEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieselEngine.swift; sourceTree = "<group>"; };
+		90ADEC9069DC2A780578268E /* DieselEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieselEngineSpec.swift; sourceTree = "<group>"; };
+		90ADEF988361283659735D85 /* PetrolEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetrolEngine.swift; sourceTree = "<group>"; };
+		90ADEFEDC6C32C4501C37B0D /* PetrolEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetrolEngineSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +58,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				866E3A731EFCC913003913F7 /* SwiftBasic.framework in Frameworks */,
+				866E3A871EFCC9D2003913F7 /* Nimble.framework in Frameworks */,
+				866E3A881EFCC9D2003913F7 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,7 @@
 				866E3A6B1EFCC913003913F7 /* SwiftBasic */,
 				866E3A761EFCC913003913F7 /* SwiftBasicTests */,
 				866E3A6A1EFCC913003913F7 /* Products */,
+				866E3A841EFCC9D2003913F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +90,9 @@
 			children = (
 				866E3A6C1EFCC913003913F7 /* SwiftBasic.h */,
 				866E3A6D1EFCC913003913F7 /* Info.plist */,
+				90ADEADDD51768FB15A1CE72 /* Engine.swift */,
+				90ADEBF4F1EA805FAFE26163 /* DieselEngine.swift */,
+				90ADEF988361283659735D85 /* PetrolEngine.swift */,
 			);
 			path = SwiftBasic;
 			sourceTree = "<group>";
@@ -82,8 +102,19 @@
 			children = (
 				866E3A771EFCC913003913F7 /* SwiftBasicTests.swift */,
 				866E3A791EFCC913003913F7 /* Info.plist */,
+				90ADEC9069DC2A780578268E /* DieselEngineSpec.swift */,
+				90ADEFEDC6C32C4501C37B0D /* PetrolEngineSpec.swift */,
 			);
 			path = SwiftBasicTests;
+			sourceTree = "<group>";
+		};
+		866E3A841EFCC9D2003913F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				866E3A851EFCC9D2003913F7 /* Nimble.framework */,
+				866E3A861EFCC9D2003913F7 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,7 @@
 				866E3A6E1EFCC913003913F7 /* Sources */,
 				866E3A6F1EFCC913003913F7 /* Frameworks */,
 				866E3A701EFCC913003913F7 /* Resources */,
+				866E3A831EFCC99D003913F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,11 +225,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		866E3A831EFCC99D003913F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		866E3A641EFCC913003913F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90ADE664C20494E1D0625A51 /* Engine.swift in Sources */,
+				90ADEA5C6D3DFAAFCB8B2E5A /* DieselEngine.swift in Sources */,
+				90ADE0CBA577507359190B0B /* PetrolEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				866E3A781EFCC913003913F7 /* SwiftBasicTests.swift in Sources */,
+				90ADEF837710638F17DB1056 /* DieselEngineSpec.swift in Sources */,
+				90ADE800CC791243409D0080 /* PetrolEngineSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +418,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FWBZ94HD49;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftBasicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayudaheuristics.SwiftBasicTests;
@@ -375,6 +434,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FWBZ94HD49;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftBasicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayudaheuristics.SwiftBasicTests;
